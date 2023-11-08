@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">  <!-- link al bootstrap.min presente nella cartella-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- bootstrap-->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- link al css style -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script> <!-- plug in smooth scroll  -->
+
+  <link href="simple-lightbox.min.css" rel="stylesheet" /> <!-- plug in lightbox  -->
+
+
+</head>
+
+<body>
+
+  <body data-spy="scroll" data-target="#navbarResponsive">
+  <div id= "home"> 
+
+  <!---------NAVIGATION START---------> 
+  <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark fixed-top ">  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+      data-target="#navbarResponsive">
+      <label for="check">
+      <input type="checkbox" id="check" /> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <script>
+            var scroll = new SmoothScroll('a[href*="#home"]', {
+              speed: 800
+            });
+          </script>
+          <a class="nav-link" href="index.html#home" data-scroll>Home</a>
+          </li>
+        <li class="nav-item">
+          <script>
+            var scroll = new SmoothScroll('a[href*="#about"]', {
+              speed: 800
+            });
+          </script>
+          <a class="nav-link" href="index.html#about" data-scroll>About</a>
+        </li>
+        <li class="nav-item">
+        <script>
+            var scroll = new SmoothScroll('a[href*="#projects"]', {
+              speed: 800
+            });
+          </script>
+          <a class="nav-link" href="index.html#projects" data-scroll>Projects</a>
+        </li>
+        <li class="nav-item">
+          <script>
+            var scroll = new SmoothScroll('a[href*="#contact"]', {
+              speed: 800
+            });
+          </script>
+          <a class="nav-link" href="index.html#contact" data-scroll>Contact</a>
+        </li>
+      </ul>
+      </div>
+  </nav>
+  <!---------NAVIGATION end--------->
+
+<style>
+       
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container .gallery a img {
+            float: center;
+            width: 100%;
+            height:100%;
+            border: 5px solid #222;
+            -webkit-transition: -webkit-transform .15s ease;
+            -moz-transition: -moz-transform .15s ease;
+            -o-transition: -o-transform .15s ease;
+            -ms-transition: -ms-transform .15s ease;
+            transition: transform .15s ease;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            background: #222;
+            min-height: 100%;
+        }
+
+        
+        .card{
+            position: relative;
+            list-style:none;
+            height: 450px;
+          }
+
+        .container{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          background: #222;
+          min-height: 100%;
+        }
+
+        .gallery{
+          display: grid;  
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 12px;
+          grid-row-gap: 12px;
+          max-width: 1200px;
+          width: 100%;
+        }
+
+        .card{
+          position: relative;
+          list-style:none;
+          height: 450px;
+        }
+
+        #projects .background{
+          position: absolute;
+          top:0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-size: cover;
+          background-position: center;
+          transform: scale(1.0) translateZ(0);
+          transform-origin:center;
+          transition: filter 200ms linear, transform 200ms linear;
+        }
+
+
+        .clear {
+            clear: both;
+        }
+
+        a {
+            color: #009688;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #01695f;
+            text-decoration: none;
+        }
+
+@media screen and (max-width: 960px){
+  /* -------tablets-----*/
+  .gallery{
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  /* ------phones-----*/
+  .gallery{
+    display: grid;  
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+  }
+}
+
+ </style>
+
+<div id=gallery class="offset container-fluid mt-3 pb-5">
+
+  <section class="container">
+        
+        <div class="gallery"> 
+
+          <a class="card" href="poster1.png"  rel="rel1">
+            <img src="poster1.png"   alt="" >
+          </a>
+
+          <a class="card" href="poster2.jpg"  rel="rel1">
+            <img src="poster2.jpg"  alt="" >
+          </a>
+
+          <a class="card" href="poster3.png"  rel="rel1">
+            <img src="poster3.png" alt="" >
+          </a>
+
+          <a class="card" href="poster4.png"  rel="rel1">
+            <img src="poster4.png"  alt="" >
+          </a>
+
+          <a class="card" href="poster5.jpg"  rel="rel1">
+            <img src="poster5.jpg"  alt="" >
+          </a>
+
+          <a class="card" href="poster6.jpg"  rel="rel1">
+            <img src="poster6.jpg"  alt="" >
+          </a>
+          
+          <div class="clear"></div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="simple-lightbox.jquery.min.js"></script>
+
+<script> 
+var gallery = $('.gallery a').simpleLightbox({
+    /* options */
+});
+</script>
+<!---------footer------------->
+
+<div class="offset container-fluid mx-auto mt-3 pb-5">  
+  
+  <div id= "footer"  class="post-heading text-center">
+    <h3 class="display-4 font-weight-bold">Thank you for scrolling so far. Wanna get in touch? </h3>        
+  </div>
+
+
+<div id="social" class="row container mx-auto pb-5">  
+
+  <a  class="col-lg-4 col-md-4 col-12 text-center" href="https://www.behance.net/petrabachior" target="_blank">
+    <img src="be.png" width="7%" alt="Behance">
+    <p class="social">Behance</p>
+  </a>
+
+  <a  class="col-lg-4 col-md-4 col-12 text-center" href="https://www.instagram.com/petraidk/" target="_blank">
+    <img src="ig.png" width="7%" alt="Instagram">
+    <p class="social">Intagram</p>
+  </a>
+
+  <a class="col-lg-4 col-md-4 col-12 text-center"  href="https://www.linkedin.com/in/petra-bachiorrini/" target="_blank">
+    <img src="linkedin.png" width="7%" alt="Linkedin">
+    <p class="social">Linkedin</p>
+  </a>
+
+
+
+</div>
+  </div>
+
+</body>
+</html>

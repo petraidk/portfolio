@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">  <!-- link al bootstrap.min presente nella cartella-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- bootstrap-->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- link al css style -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  <!-- cursor animation  -->
+	<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script> <!-- plug in smooth scroll  -->
+	
+</head>
+
+<div class="follower"></div>  <!-- cursor "follower" -->
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+<div id= "home"> 
+
+	<!---------NAVIGATION START--------->	
+	<nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark fixed-top ">	 
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+		  data-target="#navbarResponsive">
+			<label for="check">
+      <input type="checkbox" id="check" /> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+		  </button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav mx-auto">
+			  <li class="nav-item">
+					<script>
+					  var scroll = new SmoothScroll('a[href*="#home"]', {
+					    speed: 800
+					  });
+					</script>
+					<a class="nav-link" href="#home" data-scroll>Home</a>
+				  </li>
+			  <li class="nav-item">
+					<script>
+					  var scroll = new SmoothScroll('a[href*="#about"]', {
+					    speed: 800
+					  });
+					</script>
+					<a class="nav-link" href="#about" data-scroll>About</a>
+			  </li>
+			  <li class="nav-item">
+				<script>
+					  var scroll = new SmoothScroll('a[href*="#projects"]', {
+					    speed: 800
+					  });
+					</script>
+					<a class="nav-link" href="#projects" data-scroll>Projects</a>
+			  </li>
+			  <li class="nav-item">
+					<script>
+					  var scroll = new SmoothScroll('a[href*="#contact"]', {
+					    speed: 800
+					  });
+					</script>
+					<a class="nav-link" href="#contact" data-scroll>Contact</a>
+			  </li>
+			</ul>
+		  </div>
+	</nav>
+	<!---------NAVIGATION end--------->
+	
+
+	<!---------Background START--------->
+	<div>
+		<img src="back1.jpg" class="img-fluid">
+	</div>
+	<div>
+		<div class ="heading-content text-center" >
+				<h5>Hi, I'm Petra</h5>
+				
+				<h1 aria-label="I'm a graphic designer"> I'm a&nbsp;<span class="typewriter"></span>
+				</h1>
+
+		</div>
+  </div>
+<!---------Background end--------->
+
+
+<!---------About Start--------->
+<div id= "about" class="offset container-fluid mt-3 pb-5">  
+	<div class="post-heading text-center">
+		<h3 class="display-4 font-weight-bold">Something about me</h3>
+	</div>
+
+	<div class="row">
+		
+		<div class="col-lg-6 col-md-6 col-12">
+			<div class="container">
+				 <div id="carouselExampleIndicators" class="carousel slide fluid" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				  </ol>
+				   <div class="carousel-inner">
+				     <div class="carousel-item active">
+				      <img src="img1.jpg" class="d-block w-100 img-fluid" alt="img1.jpg">
+				     </div>
+				     <div class="carousel-item">
+				      <img src="img2.jpg" class="d-block w-100 img-fluid" alt="img2.jpg">
+				     </div>
+				     <div class="carousel-item">
+				      <img src="img3.jpg" class="d-block w-100 img-fluid" alt="img3.jpg">
+				     </div>
+				     <div class="carousel-item">
+				      <img src="img4.png" class="d-block w-100 img-fluid" alt="img4.png">
+				     </div>
+				     <div class="carousel-item">
+				      <img src="img5.jpg" class="d-block w-100 img-fluid" alt="img5.jpg">
+				     </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				  </div>
+				</div>
+		</div>
+
+		<div class="col-lg-5 col-md-5 col-12">
+			<h2>About me</h2>
+			<p> Hi I am Petra Bachiorrini, I'm studying Communication Design at the Polytechnic of Turin.
+I have various interests and passions that all revolve
+around the world of art, fashion and music. I am outgoing,
+I enjoy meeting new people and being surrounded by stimulation, going to events and exhibitions. 
+My curiosity leads me to stay constantly updated
+on the latest news of the moment. I am creative, I love to see my ideas come to fruition, I put my whole self into every project
+to get to the result I want.</p>
+			<button class="btn">
+				<a target="_blank" href="C:\Users\bacpe\Documents\Web portfolio4_4 Separate\cv_Petra_Bachiorrini.pdf"> Download my cv </a>
+				<i class="fa fa-download"> </i>
+			</button>
+		</div>
+	
+	</div>
+
+
+
+<!------------ embed spotify ----------->
+<style>
+
+  ul#playlist {
+    width:100%;
+		max-width: 100%;
+  }
+
+  ul#playlist > li {
+    list-style-type: none;
+  }
+
+ button {
+    border: 2px solid black;
+		width: 100%;
+		padding: 15px 22px;
+		background: #000;
+		border-radius: 50px;
+		margin-top: 10px;
+  }
+
+ button a{
+	color: #fff;	
+	text-decoration: none;
+	font-size: 1m;
+}
+
+  button:hover {
+    background: #8b00f7;
+  } 
+
+</style>
+
+
+<div class="offset container mt-3 pb-5">
+			<h2 class="text-center">Choose your mood</h2>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-12">
+	    <ul id="playlist">
+	      <li>
+	        <button data-spotify-id="spotify:playlist:2iW4YpB5LznBJvfrL9Kys0">
+	          Woman Energy
+	        </button>
+	      </li>
+	      <li>
+	        <button data-spotify-id="spotify:playlist:24PpMy6xePTJqH8EcTulwA">
+	          Chilling
+	        </button>
+	      </li>
+	      <li>
+	        <button data-spotify-id="spotify:playlist:2vAW1UOgKjU0f7QwMjGflA">
+	          Karaoke
+	        </button>
+	      </li>
+	    </ul>
+  	</div>
+
+	<!------------ parte javascript spotify  --------->
+    
+    <div class="col-lg-8 col-md-8 col-12">
+    	<div id="embed-iframe"></div>
+	    <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async>
+	    </script>
+
+	    <script type="text/javascript">
+	      window.onSpotifyIframeApiReady = (IFrameAPI) => {
+	        let element = document.getElementById('embed-iframe');
+	        let options = {
+	            width: '100%',
+	            height: '400',
+	            uri: 'spotify:playlist:2vAW1UOgKjU0f7QwMjGflA'
+	          };
+	        let callback = (EmbedController) => {
+	          document.querySelectorAll('ul#playlist > li > button').forEach(
+	            playlist => {
+	              playlist.addEventListener('click', () => {
+	                EmbedController.loadUri(playlist.dataset.spotifyId)
+	              });
+	            })
+	        };
+	        IFrameAPI.createController(element, options, callback);
+	      };
+	    </script>
+  </div>
+	</div>
+</div>
+</script>
+
+</div>
+<!---------About End--------->
+
+
+<!---------Projects Start--------->
+
+<div id= "projects" class="offset container mt-3 pb-5">
+	<div class="post-heading text-center">
+		<h3 class="display-4 font-weight-bold">Projects</h3>				
+</div>
+
+<!---------Card--------->	
+
+<section class="hero">
+	<div class="card-grid">
+		
+		<a id="swup" class="card" href="https://www.behance.net/gallery/147920541/Swup-Non-li-metti-Scambiali" >
+			<div class="background" style="background-image: url(swup.jpg);"></div>
+			<div class="content">
+				    <p class="category">University Project</p>
+				    <h3 class="card-title"></h3>  
+			</div>
+		</a>
+
+		<a class="card" href="https://www.behance.net/gallery/145681833/FANZINE-fa-ridere-ma-fa-anche-riflettere">
+			<div class="background" style="background-image: url(fan1.jpg);"></div>
+			<div class="content">
+				    <p class="category">University Project - fanzine</p>
+				    <h3 class="card-title"></h3>  
+			</div>
+		</a>
+
+		<a class="card" href="https://www.behance.net/gallery/157998215/storia-di-un-rullino-bruciato">
+			<div class="background" style="background-image: url(fan2.jpg);"></div>
+			<div class="content">
+				    <p class="category">University Project - fanzine</p>
+				    <h3 class="card-title"></h3>  
+			</div>
+		</a>
+
+		<a class="card" href="poster.html">
+			<div class="background" style="background-image: url(poster3.png);"></div>
+			<div class="content">
+				    <p class="category">my posters</p>
+				    <h3 class="card-title"></h3>  
+			</div>
+		</a>
+
+			
+	</div>
+</section>
+
+<section class="swup"> <h3 class="display-4 font-weight-bold"></h3> </section>
+</div>
+<!---------Projects End--------->
+
+
+<!---------Contact Start--------->
+<div id= "contact" class="offset container w-50 mx-auto mt-4 pb-5">
+
+	<div class="post-heading text-center">
+		<h3 class="display-4 font-weight-bold">Contact me</h3>				
+	</div>
+
+		<form action="/action_page.php">
+		  <div class="form-group">
+		    <label for="email">Full Name:</label>
+		    <input type="text" class="form-control" placeholder="Enter your full name" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Email address:</label>
+		    <input type="email" class="form-control" placeholder="Enter email" id="email">
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Your Message:</label>
+		    <textarea class="form-control"></textarea>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Send</button>
+		</form>
+</div>
+
+
+
+<div id= "maps" class="offset container-fluid mx-auto mt-3 pb-5">  
+	
+	<div class="row">
+		<div class="post-heading text-center col-lg-6 col-md-6 col-12">
+					<h3 class="display-4 font-weight-bold">Where I live</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17893.58046115695!2d7.668931610738529!3d45.06424734563608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d0cc3ed5cdf%3A0x405e67d473c94e0!2sTorino%20TO!5e0!3m2!1sit!2sit!4v1673694290140!5m2!1sit!2sit" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div class="post-heading text-center col-lg-6 col-md-6 col-12">
+					<h3 class="display-4 font-weight-bold">My hometown</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23387.501873457444!2d11.658821354274677!3d42.88471044643719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132915371e4e7763%3A0x5100353d9359166c!2s53021%20Abbadia%20San%20Salvatore%20SI!5e0!3m2!1sit!2sit!4v1673694407524!5m2!1sit!2sit" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+</div>
+
+<div class="offset container-fluid mx-auto mt-3 pb-5">  
+	
+	<div id= "footer"  class="post-heading text-center">
+		<h3 class="display-4 font-weight-bold">Thank you for scrolling so far. Wanna get in touch? </h3>				
+	</div>
+
+
+<div id="social" class="row container mx-auto pb-5">	
+
+	<a  class="col-lg-4 col-md-4 col-12 text-center" href="https://www.behance.net/petrabachior" target="_blank">
+  	<img src="be.png" width="7%" alt="Behance">
+  	<p class="social">Behance</p>
+	</a>
+
+	<a  class="col-lg-4 col-md-4 col-12 text-center" href="https://www.instagram.com/petraidk/" target="_blank">
+  	<img src="ig.png" width="7%" alt="Instagram">
+  	<p class="social">Intagram</p>
+  </a>
+
+  <a class="col-lg-4 col-md-4 col-12 text-center"  href="https://www.linkedin.com/in/petra-bachiorrini/" target="_blank">
+  	<img src="linkedin.png" width="7%" alt="Linkedin">
+  	<p class="social">Linkedin</p>
+	</a>
+
+
+
+</div>
+	</div>
+
+
+<!---------Contact End--------->
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+ <!-- cursor animation  -->
+<script>
+  $(document).on('mousemove', (event) => {
+  $('.follower').css({
+    left: event.clientX,
+    top: event.clientY,
+  });
+});
+</script>
+
+</body>
+</html>
